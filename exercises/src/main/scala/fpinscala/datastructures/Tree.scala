@@ -30,4 +30,5 @@ object Tree {
     fold(t)(a => 1)(1 + _ + _)
 
   def maxViaFold(t: Tree[Int]): Int =
+    fold(t)(a => a)(_ max _)
 }
